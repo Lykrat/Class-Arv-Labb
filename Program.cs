@@ -24,7 +24,7 @@ namespace Class_Arv_Labb
 
             Haj Shark1 = new Haj(33, "Mörk blå", "F", 460, 7, 220,1);
             Shark1.makeSound();
-            Shark1.checkTeeth();
+            Shark1.checkLength();
             Shark1.checkTeeth();
 
             Lax Salmon1 = new Lax(11, "Blå, vit och rosa", "F", 100, 6, 0.7m,1);
@@ -60,16 +60,16 @@ namespace Class_Arv_Labb
 
         public void getInfo()
         {
-            Console.WriteLine($"Art: {species} {id}\nFärg: {colour}\nKön: {gender}\nÅlder: {age}år\n");
+            Console.WriteLine($"Art: {species}\nID: {id}\nFärg: {colour}\nKön: {gender}\nÅlder: {age}år\n");
         }
 
         public void seeAnimal()
         {
-            Console.WriteLine($"Ser ut som ett {species} {id} som har färgen {colour}.\n");
+            Console.WriteLine($"Ser ut som ett {species} {id} som har färgen {colour}\n");
         }
         public void checkEnclosure()
         {
-            Console.WriteLine($"{species} {id} är i inhägnad {enclosure}.\n");
+            Console.WriteLine($"{species} {id} är i inhägnad {enclosure}\n");
         }
     }
     //Child class lion
@@ -141,7 +141,7 @@ namespace Class_Arv_Labb
         {
             if (length > 50)
             {
-                Console.WriteLine($"Stora {species} {id} är {length}cm lång.\n");
+                Console.WriteLine($"{species} {id} är {length}cm lång. Den är stor\n");
             }
             else
             {
@@ -215,7 +215,7 @@ namespace Class_Arv_Labb
         {
             if (speed < 0.5m)
             {
-                Console.WriteLine($"{species} {id} har maxhastigheten {speed}m/s.\n");
+                Console.WriteLine($"{species} {id} har maxhastigheten {speed}m/s\n");
             }
             else
             {
@@ -253,11 +253,11 @@ namespace Class_Arv_Labb
         {
             if (stripes > 50)
             {
-                Console.WriteLine($"{species} {id} har {stripes} ränder vilket är mer en vanligt.\n");
+                Console.WriteLine($"{species} {id} har {stripes} ränder vilket är mer en vanligt\n");
             }
             else if (stripes < 30)
             {
-                Console.WriteLine($"{species} {id} har {stripes} ränder vilket inte är så många.\n");
+                Console.WriteLine($"{species} {id} har {stripes} ränder vilket inte är så många\n");
             }
             else
             {
