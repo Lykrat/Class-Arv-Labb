@@ -31,18 +31,21 @@ namespace Class_Arv_Labb
             Salmon1.makeSound();
             Salmon1.checkSpeed();
 
+            Fisk Fish2 = new Fisk();
+            Fish2.getInfo();
+
         }
     }
     //Animal class
     public class Djur
     {
-        public int age=default;
-        public int id = default;
-        public string species=default;
-        public string colour=default;
-        public string gender = default;
-        public string sound = default;
-        public int enclosure = default;
+        public int age;
+        public int id;
+        public string species;
+        public string colour;
+        public string gender;
+        public string sound;
+        public int enclosure;
 
         public Djur()
         {
@@ -60,7 +63,7 @@ namespace Class_Arv_Labb
 
         public void getInfo()
         {
-            Console.WriteLine($"Art: {species}\nID: {id}\nFärg: {colour}\nKön: {gender}\nÅlder: {age}år\n");
+            Console.WriteLine($"Art: {species}\nID: {id}\nFärg: {colour}\nKön: {gender}\nÅlder: {age} år\n");
         }
 
         public void seeAnimal()
